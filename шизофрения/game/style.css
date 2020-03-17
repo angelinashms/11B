@@ -1,0 +1,29 @@
+* {
+	
+	box-sizing: border-box;
+}
+#game {
+	box-sizing: content-box;
+	width: 500px;
+	height: 400px;
+	position: absolute;
+    top: 20%;
+    left: 30%;
+	border: 2px solid black;
+}
+
+.snakeBlock {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: lightgreen;
+	border: 1px solid black;
+}
+
+.snakeFood {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border: 1px solid black;
+}
