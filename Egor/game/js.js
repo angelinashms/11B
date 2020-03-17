@@ -40,7 +40,12 @@ FoodX=randomTen(0,game.clientWidth-10);
 FoodY=randomTen(0,game.clientHeight-10);
 
 }	
+	function drawFood(){
 	
+	}
+	const point = document.createElement('point');
+point.className = 'snakeFood';
+point.style.
 
 
 
