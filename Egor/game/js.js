@@ -4,7 +4,7 @@ const SNAKE_COLOUR = 'lightgreen';
 const SNAKE_BORDER_COLOUR = 'darkgreen';
 const FOOD_COLOUR = 'red';
 const FOOD_BORDER_COLOUR = 'darkred';
-
+check=0;
 
 
 
@@ -22,7 +22,8 @@ snake = [
 const game = document.getElementById('game');
 
 document.addEventListener('keydown', changeDirection);
-
+createFood();
+drawFood();
 function changeDirection(event) {
 	if (check){
 		clearInterval(timer);
@@ -41,12 +42,14 @@ FoodY=randomTen(0,game.clientHeight-10);
 
 }	
 	function drawFood(){
-	
-	}
-	const point = document.createElement('point');
+		point = document.createElement('point');
 point.className = 'snakeFood';
-point.style.
+point.style.left=FoodX+'px';
+point.style.top=FoodY+'px';
+game.appendChild(point);
 
+	}
+	
 
 
 
