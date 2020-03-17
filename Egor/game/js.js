@@ -24,6 +24,7 @@ const game = document.getElementById('game');
 document.addEventListener('keydown', changeDirection);
 createFood();
 drawFood();
+drawSnake();
 function changeDirection(event) {
 	if (check){
 		clearInterval(timer);
@@ -49,7 +50,17 @@ point.style.top=FoodY+'px';
 game.appendChild(point);
 
 	}
-	
+function drawSnakePart(SnakePart){
+		point = document.createElement('point');
+point.className = 'snakeBlock';
+point.style.left=SnakePart.x+'px';
+point.style.top=SnakePart.y+'px';
+game.appendChild(point);
+}	
+function drawSnake(){
+snake.forEach(drawSnakePart)
+
+}
 
 
 
