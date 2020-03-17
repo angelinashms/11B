@@ -34,6 +34,13 @@ function changeDirection(event) {
 function randomTen(min, max) {
       return Math.round((Math.random() * (max-min) + min) / 10) * 10;	  
     }
+	
+function createFood(){
+FoodX=randomTen(0,game.clientWidth-10);
+FoodY=randomTen(0,game.clientHeight-10);
+
+}	
+	
 
 
 
